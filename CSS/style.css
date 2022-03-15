@@ -1,9 +1,79 @@
 html {font-size: 62.5%}
 
+body {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Style du HEADER */
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 5rem;
+}
+
+.header__text {
+    padding: 2rem;
+}
+
+.header__title {
+    margin-bottom: 0;
+}
+
+.header__title__def {
+    border-bottom: 3px solid black;
+    padding-bottom: 2rem;
+}
+
+.header__title,
+.header__under-title {
+    text-transform: uppercase;
+}
 
 .header__photo-profil {
     width: 20rem;
+    height: 20rem;
     border-radius: 50%;
-    border: 0.5rem solid gray;
+    border: 0.5rem solid gray;  
+}
+
+/* Style du MAIN */
+
+main {
+    display: flex;
+}
+
+.sections {
+    text-align: center;
+    padding: 2rem;
+}
+
+.section__left {
+    flex: 1;
+}
+
+.section__main {
+    flex: 3;
+}
+
+.section__main-title:not(:first-child) {
+    border-top: 3px solid grey;
+    padding: 2rem;
+}
+
+.section__right {
+    flex: 2;
+}
+
+.section__right ul {
+    list-style: none;
 }

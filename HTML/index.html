@@ -5,46 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Damien Laitani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
-    <header role="banner" class="header">
-        <h1 class="header__title">damien laitani</h1>
-        <p>Développeur web, en formation chez O'clock</p>
-        <h2 class="header__under-title">à propos de moi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente quae aspernatur rem quo odit
-            omnis eligendi voluptatibus. Fuga quo ipsum dolor maxime sunt officiis, veniam similique voluptas debitis
-            nesciunt!</p>
-        <img src="../images/photo-profil.jpg" alt="" class="header__photo-profil">
-    </header>
-    <main>
-        <section class="section--left">
+    <div class="container">
+        <header role="banner" class="header">
+            <div class="header__text">
+                <h1 class="header__title">damien laitani</h1>
+                <p class="header__title__def">Développeur web, en formation chez O'clock</p>
+                <h2 class="header__under-title">à propos de moi</h2>
+                <p class="header__under-title__def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                    sapiente quae aspernatur rem quo
+                    odit
+                    omnis eligendi voluptatibus. Fuga quo ipsum dolor maxime sunt officiis, veniam similique voluptas
+                    debitis
+                    nesciunt!
+                </p>
+            </div>
 
-        </section>
-        <section class="section--main">
-            <h3 class="section--main__title">Expériences</h3>
-            <h3 class="section--main__title">Formation</h3>
-            <h3 class="section--main__title">Certificats</h3>
-        </section>
-        <section class="section--right">
-            <h3 class="section--right__title">Compétences</h3>
-            <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>php</li>
-                <li>javascript</li>
-            </ul>
-            <h3 class="section--right__title">Langues</h3>
-            <ul>
-                <li>anglais</li>
-            </ul>
-            <h3 class="section--right__title">Contact</h3>
-            <a href="tel:+3335551818">0635551818</a>
-            <a href="mailto:d.laitani@gmail.com">d.laitani@gmail.com</a>
-        </section>
-    </main>
+            <img src="../images/photo-profil-v2.jpg" alt="" class="header__photo-profil">
+        </header>
+        <main>
+            <section class="sections section__left">
+                <p>Juillet 2012 - Mai 2021</p>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-duotone fa-file-certificate"></i>
+                <p>Février 2022 - Août 2022</p>
+                <p>2008 - 2012</p>
+                <!-- centre d'interet -->
+            </section>
+            <section class="sections section__main">
+                <h3 class="section__main-title">Expériences</h3>
+                <p>
+                    Etant Boulanger-Pâtissier avant ma reconversion, j'ai travaillé en tant que Boulanger dans le sud de
+                    la France pendant 2 ans, puis comme Tourier (Boulogne-Billancourt) pendant 6 ans.
+                </p>
+                <h3 class="section__main-title">Formation</h3>
+                <h4>O'clock</h4>
+                <p>
+                    Titre professionnel développeur web et web mobile
+                </p>
+                <p>
+                    Formation Développeur web (HTML5, CSS3, PHP, JS, SQL)
+                </p>
+                <h4>Lycée Jule FERRY « La Colline » à MONTPELLIER</h4>
+                <p>
+                    BAC pro Boulangerie-Pâtisserie, BEP Pâtissier, CAP Boulanger
+                </p>
+                <h3 class="section__main-title">Certificats</h3>
+                <div>
+                    <img width="200px" src="../images/certificat1.jpg" alt="certificat Udemy">
+                    <p>Certificat Udemy - Formation complète developpeur web (Apprenez en pratiquant )</p>
+                </div>
+                <img width="200px" src="../images/certificat2.jpg" alt="certificat Udemy">
+                <p>Certificat Udemy - Formation complète developpeur web</p>
+                <div>
+
+                </div>
+            </section>
+            <section class="sections section__right">
+                <h3 class="section__right-title">Compétences</h3>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>php</li>
+                    <li>javascript</li>
+                </ul>
+                <h3 class="section__right-title">Langues</h3>
+                <ul>
+                    <li>anglais</li>
+                </ul>
+                <h3 class="section__right-title">Contact</h3>
+                <a href="tel:+3335551818">0635551818</a>
+                <a href="mailto:d.laitani@gmail.com">d.laitani@gmail.com</a>
+            </section>
+        </main>
+    </div>
+
 </body>
 
 </html>
