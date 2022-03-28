@@ -14,15 +14,14 @@ body {
 }
 
 .header {
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 5px solid black;
+    align-items: center; */
+    width: 90%;
+    margin: auto;
     padding-bottom: 5rem;
-}
-
-.header__text {
-    padding: 2rem;
+    text-align: center;
 }
 
 .header__title {
@@ -30,7 +29,6 @@ body {
 }
 
 .header__title__def {
-    border-bottom: 3px solid black;
     padding-bottom: 2rem;
 }
 
@@ -40,10 +38,41 @@ body {
 }
 
 .header__photo-profil {
-    width: 20rem;
-    height: 20rem;
+    width: 17rem;
+    height: 17rem;
     border-radius: 50%;
     border: 0.5rem solid gray;  
+}
+
+.header__under-title__def {
+    text-align: center;
+}
+
+.container__lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .lines {
+    display: inline-block;
+    position: relative;
+    height: 0;
+    width: 45%;
+    border-bottom: 2px solid black;
+    animation: animLines 2s ease-out;
+    transform-origin: left;
+}
+
+.circle {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0.5rem;
+    opacity: 0;
+    animation: animCircle 2.5s ease-out 1.5s forwards;
 }
 
 /* Style du MAIN */
@@ -76,4 +105,40 @@ main {
 
 .section__right ul {
     list-style: none;
+}
+
+/* Animations */
+
+@keyframes animLines {
+    0% {
+        transform: scaleX(0);
+        opacity: .1;
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    85%,100% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animCircle {
+    0% {
+        opacity: .1;
+    }
+    15% {opacity: .2;}
+    30% {opacity: .5;}
+    60% {opacity: .7;}
+    100% {
+        opacity: 1;
+    }
 }
