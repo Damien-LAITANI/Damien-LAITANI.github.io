@@ -6,7 +6,7 @@ html {
 
 
 body {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background_fond);
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .header__title__def {
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 
 .header__title,
@@ -67,7 +67,7 @@ body {
 }
 
 
-.header__under-title__def {
+.header__under-def {
     text-align: center;
 }
 
@@ -109,35 +109,35 @@ body {
 
 .middle__section {
     display: flex;
-    column-gap: 2rem ;
-    padding-left: 2rem;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
     background-color: var(--background_fond);
     color: var(--background_color-light);
 }
 
 .competences {
-    flex: 2;
+    /* flex: 2; */
+    width: calc(100%/2);
 }
 
 .interet {
-    flex: 1;  
+    /* flex: 1;   */
+    width: calc(100%/4);
 }
 
 .contact {
-    flex: 1;      
+    /* flex: 1;   */
+    width: calc(100%/4);    
 }
 .language {
-    flex: 1;      
+    /* flex: 0.5;   */
+    width: calc(100%/4);    
 }
 
 .section__middle__title,
 .middle__section p,
 .contact a{
     text-align:left ;
-}
-
-.middle__info {
-    width: calc(100% / 3);
 }
 
 .competences p {
@@ -210,7 +210,7 @@ body {
 .info__date {
     flex: 2;
     padding-left: 5rem;
-    padding-right: 0.5rem;
+    padding-right: 2rem;
     border-left: 1px solid grey;
     text-align: left;
 }
@@ -221,6 +221,7 @@ body {
 
 .sections {
     text-align: center;
+    padding: 2rem;
 }
 
 .section__main__title {
@@ -252,6 +253,10 @@ footer {
 .footer__item {
     display: block;
     text-decoration: none;
+}
+
+.fa-external-link {
+    color: var(--background_fond);
 }
 /* Animations */
 
@@ -296,4 +301,33 @@ footer {
     100% {
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width: 1450px) {
+    .middle__section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .middle__info {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .header__under-def {
+        font-size: 1.5rem;
+    }
+    .middle__section {
+        justify-content: center;
+    }
+    .middle__info {
+        width: 100%;
+    }
+
 }
