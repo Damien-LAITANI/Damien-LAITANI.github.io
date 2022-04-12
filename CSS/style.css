@@ -57,10 +57,6 @@ body {
     letter-spacing: 1rem;
 }
 
-.header__title__def {
-    /* padding-bottom: 2rem; */
-}
-
 .header__title,
 .header__under-title {
     text-transform: uppercase;
@@ -131,7 +127,7 @@ body {
 }
 .language {
     /* flex: 0.5;   */
-    width: calc(100%/4);    
+    width: calc(100%/6);    
 }
 
 .section__middle__title,
@@ -309,6 +305,10 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
+    }
+    .language {
+        /* flex: 0.5;   */
+        width: calc(100%/4);    
     }
 }
 
