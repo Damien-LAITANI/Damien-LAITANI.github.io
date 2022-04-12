@@ -21,8 +21,8 @@ body {
 
 .header {
     width: 90%;
-    margin: 3rem auto;
-    padding-bottom: 5rem;
+    margin: auto;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -110,6 +110,7 @@ body {
 .middle__section {
     display: flex;
     column-gap: 2rem ;
+    padding-left: 2rem;
     background-color: var(--background_fond);
     color: var(--background_color-light);
 }
@@ -125,9 +126,12 @@ body {
 .contact {
     flex: 1;      
 }
+.language {
+    flex: 1;      
+}
 
 .section__middle__title,
-.middle__section li,
+.middle__section p,
 .contact a{
     text-align:left ;
 }
@@ -136,14 +140,14 @@ body {
     width: calc(100% / 3);
 }
 
-.middle__section ul {
-    list-style: none;
-}
-
-.middle__section li {
+.competences p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.2rem;
+}
+
+.item {
+    text-align: left;
 }
 
 .container__bar {
@@ -198,18 +202,15 @@ body {
     column-gap: 2rem;
 }
 
-.info__date:first-child {
-    border-bottom: 2px solid var(--background_fond);
-}
-
-.dates {
+.date {
     flex: 1;
-    border-bottom: 2px solid var(--background_fond);
+    margin: 0;
 }
 
 .info__date {
     flex: 2;
     padding-left: 5rem;
+    padding-right: 0.5rem;
     border-left: 1px solid grey;
     text-align: left;
 }
@@ -220,7 +221,6 @@ body {
 
 .sections {
     text-align: center;
-    padding: 2rem;
 }
 
 .section__main__title {
@@ -231,6 +231,10 @@ body {
 .section__main__title:not(:first-child) {
     border-top: 3px solid grey;
     padding-top: 3rem;
+}
+
+.section__main__under-title {
+    margin: 1rem 0;
 }
 
 /* Footer */
