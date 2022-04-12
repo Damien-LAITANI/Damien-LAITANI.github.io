@@ -245,20 +245,9 @@ footer {
     padding-left: 2rem;
 }
 
-.footer__container__items {
-    display: flex;
-    justify-content: flex-start;
-    width: min-content;
-}
-
 .footer__item {
-    display: flex;
-}
-
-.footer__item  p {
-    width: 15rem;
-    padding: 2rem;
-    line-height: 2rem;
+    display: block;
+    text-decoration: none;
 }
 /* Animations */
 
