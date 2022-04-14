@@ -11,6 +11,10 @@ body {
     background-color: var(--background_fond);
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
 /* Style du HEADER */
 
 .container {
@@ -185,9 +189,15 @@ body {
 
 .contact a {
     display: block;
+    max-width: max-content;
     color: white;
     text-decoration: none;
     margin-bottom: 1.2rem;
+}
+
+.contact .fa-external-link {
+    color: var(--background_color-light);
+    font-size: 1.5rem;
 }
 
 /* style du main__section*/
@@ -249,9 +259,10 @@ footer {
 .footer__item {
     display: block;
     text-decoration: none;
+    max-width: max-content;
 }
 
-.fa-external-link {
+.footer .fa-external-link {
     color: var(--background_fond);
 }
 /* Animations */
